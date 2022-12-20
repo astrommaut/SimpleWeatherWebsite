@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+body {
+  background:linear-gradient( #6fc3f7,#c2fdff);
+  color: #f7f7f7;
+  font-family: 'Oswald', sans-serif;
+  min-height: 100%;
+  background-attachment: fixed;
+  font-weight: 300;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather_icon {
+  font-size: 8rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  color:#8b47b5;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.input-group-text{
+  border-radius: 25px;
+}
+.form-control{
+  border-radius: 25px;
+}
+.temp_number {
+  font-size: 11rem;
+  font-weight: 700;
+}
+.celsius {
+  font-size: 2rem;
+}
+.kartica{
+  background:linear-gradient( #20BF55,#01BAEF);  border-radius: 20px;
+}
+.info_span{
+  font-size: 1rem;
+}
+.sunny_icon{
+  color: yellow;
+}
+.loading_screen{
+  background:linear-gradient( #6fc3f7,#c2fdff);
+  height: 100vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:500px) {
+  .card-bottom,
+  .card-bottom2{
+    font-size: 0.9rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width:425px) {
+  .weather_icon {
+    font-size: 7rem;
+  }
+  .temp_number {
+    font-size: 8.5rem;
+  }
+  .celsius {
+    font-size: 1.6rem;
+  }
+  .info_span{
+    font-size: 0.7rem;
+  }
+  .card-bottom,
+  .card-bottom2{
+    font-size: 0.7rem;
   }
 }
